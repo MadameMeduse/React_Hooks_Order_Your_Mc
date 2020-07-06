@@ -2,13 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import ShopingList from "./ShopingList";
+import ItemsCounter from "./ItemsCounter";
 import FruitsSearchList from "./FruitsSearchList";
+import ShapeChanger from "./ShapeChanger";
+
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
     <ShopingList />
+    <ItemsCounter />
     <FruitsSearchList />
+    <ShapeChanger />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -33,3 +33,6 @@ const ShopingList = () => {
 };
 
 export default ShopingList;
+
+//mozliwosc usuwania z listy
+//dodac licznik pozycji

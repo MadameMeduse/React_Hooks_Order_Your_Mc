@@ -39,3 +39,7 @@ const FruitsSearchList = () => {
 };
 
 export default FruitsSearchList;
+
+//dopisac mozliwosc dodawania do poprzedniej listy owocu z listy
+//mozliwosc usuwania z listy
+//ukryc liste

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-const App = () => {
+const ShopingList = () => {
   const [shoppingList, setShoppingList] = useState([]);
   const [inputValue, setInputValue] = useState("");
 
@@ -32,4 +32,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default ShopingList;

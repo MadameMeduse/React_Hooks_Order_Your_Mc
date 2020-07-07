@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import { fruits } from "./FruitsArray";
 
 const FruitsSearchList = () => {
@@ -22,7 +21,7 @@ const FruitsSearchList = () => {
 
   return (
     <div className="App">
-      <label for="fruit">Search fruit</label>
+      <label htmlFor="fruit">Search fruit</label>
       <input
         value={inputValue}
         onChange={handleInputChange}
@@ -31,7 +30,7 @@ const FruitsSearchList = () => {
       />
       <ul>
         {fruitsList.map(fruit => (
-          <li>{fruit}</li>
+          <li key={fruit}>{fruit}</li>
         ))}
       </ul>
     </div>

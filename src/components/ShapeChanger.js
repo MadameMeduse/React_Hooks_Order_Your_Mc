@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import "./App.css";
 
 export const ShapeChanger = () => {
   const MyBox = useRef(null);

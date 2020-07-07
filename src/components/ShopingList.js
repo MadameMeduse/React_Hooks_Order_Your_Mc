@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 
 const ShopingList = () => {
   const [shoppingList, setShoppingList] = useState([]);
@@ -18,7 +17,7 @@ const ShopingList = () => {
     <div className="App">
       <ul>
         {shoppingList.map(item => (
-          <li>
+          <li key={item}>
             {item}
             <button>remove</button>
           </li>

@@ -18,6 +18,7 @@ body {
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
     list-style: none;
+    padding-top: 100px;
 }
 
 @mixin FlexCenter{

@@ -1,4 +1,10 @@
-export function flexUnit(amount, min, max, unit = "vw", prop = "font-size") {
+export default function flexUnit(
+  amount,
+  min,
+  max,
+  unit = "vw",
+  prop = "font-size"
+) {
   const minBreakpoint = (min / amount) * 100;
   const maxBreakpoint = max ? (max / amount) * 100 : false;
   const dimension = unit === "vw" ? "width" : "height";

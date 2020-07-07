@@ -1,12 +1,11 @@
 import React from "react";
-import FruitsSearchList from "../components/FruitsSearchList";
+import UserPageTemplate from "../template/UserPageTemplate";
+import InProgress from "../components/InProgress";
 
-const OrderComplete = () => {
-  return (
-    <div>
-      <FruitsSearchList />
-    </div>
-  );
-};
+const OrderComplete = () => (
+  <UserPageTemplate>
+    <InProgress />
+  </UserPageTemplate>
+);
 
 export default OrderComplete;

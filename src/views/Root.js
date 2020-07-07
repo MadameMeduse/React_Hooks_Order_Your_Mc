@@ -9,16 +9,16 @@ import BasketView from "./BasketView";
 class Root extends React.Component {
   render() {
     return (
-      <MainTemplate>
-        <BrowserRouter>
+      <BrowserRouter>
+        <MainTemplate>
           <Switch>
             <Route exact path="/" component={ModalView} />
             <Route path="/OrderComplete" component={OrderCompleteView} />
             <Route path="/Offer" component={OfferView} />
             <Route path="/Basket" component={BasketView} />
           </Switch>
-        </BrowserRouter>
-      </MainTemplate>
+        </MainTemplate>
+      </BrowserRouter>
     );
   }
 }

@@ -1,11 +1,12 @@
 import React from "react";
-import ShapeChanger from "../components/ShapeChanger";
+import InProgress from "../components/InProgress";
+import UserPageTemplate from "../template/UserPageTemplate";
 
 const Basket = () => {
   return (
-    <div>
-      <ShapeChanger />{" "}
-    </div>
+    <UserPageTemplate>
+      <InProgress />
+    </UserPageTemplate>
   );
 };
 

@@ -9,6 +9,8 @@ const StyledNavigation = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
 `;
 
 const Navigation = () => {

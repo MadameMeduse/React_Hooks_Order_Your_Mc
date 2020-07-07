@@ -1,13 +1,12 @@
 import React from "react";
-import ShopingList from "../components/ShopingList";
-import Navigation from "../components/Navigation/Navigation";
+import InProgress from "../components/InProgress";
+import UserPageTemplate from "../template/UserPageTemplate";
 
 const ModalView = props => {
   return (
-    <div>
-      <Navigation />
-      <ShopingList />
-    </div>
+    <UserPageTemplate>
+      <InProgress />
+    </UserPageTemplate>
   );
 };
 

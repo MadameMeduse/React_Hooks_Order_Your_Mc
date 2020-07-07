@@ -41,22 +41,22 @@ const NavIcons = () => {
       <StyledNavIcons>
         <ButtonIcon
           as={Link}
-          to="https://www.facebook.com/McDonaldsPolska?fref=ts"
+          to="/https://www.facebook.com/McDonaldsPolska?fref=ts"
           icon={facebookIcon}
         />
         <ButtonIcon
           as={Link}
-          to="https://www.instagram.com/mamsmakanamaka/"
+          to="/https://www.instagram.com/mamsmakanamaka/"
           icon={instagramIcon}
         />
         <ButtonIcon
           as={Link}
-          to="https://www.youtube.com/user/McDonaldsPoland"
+          to="/https://www.youtube.com/user/McDonaldsPoland"
           icon={youtubeIcon}
         />
         <ButtonIcon
           as={Link}
-          to="https://pl.linkedin.com/company/mcdonald%27s-polska"
+          to="/https://pl.linkedin.com/company/mcdonald%27s-polska"
           icon={linkedInIcon}
         />
       </StyledNavIcons>

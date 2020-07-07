@@ -1,11 +1,12 @@
 import React from "react";
-import ItemsCounter from "../components/ItemsCounter";
+import UserPageTemplate from "../template/UserPageTemplate";
+import InProgress from "../components/InProgress";
 
-const OfferView = props => {
+const OfferView = () => {
   return (
-    <div>
-      <ItemsCounter />
-    </div>
+    <UserPageTemplate>
+      <InProgress />
+    </UserPageTemplate>
   );
 };
 

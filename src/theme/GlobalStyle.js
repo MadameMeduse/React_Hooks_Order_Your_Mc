@@ -20,6 +20,17 @@ body {
     list-style: none;
 }
 
+@mixin FlexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin FlexBetween {
+    display: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
 `;
 
 export default GlobalStyles;

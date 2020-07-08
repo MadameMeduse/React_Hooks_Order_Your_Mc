@@ -9,9 +9,10 @@ import linkedInIcon from "../../../icons/linkedin.svg";
 import Burger from "./Burger/Burger";
 import Menu from "./Menu/Menu";
 import Logo from "./Logo/Logo";
+import flexUnit from "../../../theme/Mixins";
 
 const StyledNavIcons = styled.div`
-  width: 25%;
+  ${flexUnit(25, 100, 300, "vw", "width")};
   display: flex;
   justify-content: flex-end;
   align-items: center;

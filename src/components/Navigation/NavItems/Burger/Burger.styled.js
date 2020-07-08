@@ -8,4 +8,9 @@ export const StyledBurger = styled.div`
   background-repeat: no-repeat;
   margin-left: 40px;
   cursor: pointer;
+  transition: opacity 0.3s, 0.3s ease;
+
+  &:hover {
+    opacity: 0.5;
+  }
 `;

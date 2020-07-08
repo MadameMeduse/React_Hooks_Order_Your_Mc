@@ -3,11 +3,10 @@ import { connect } from "react-redux";
 import UserPageTemplate from "../template/UserPageTemplate";
 import InProgress from "../components/InProgress";
 
-const MenuView = props => {
+const MenuView = () => {
   return (
     <UserPageTemplate>
       <InProgress />
-      {console.log({ props })}
     </UserPageTemplate>
   );
 };

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import flexUnit from "../../../../theme/Mixins";
 
 export const StyledMenu = styled.nav`
   display: flex;
@@ -9,7 +10,6 @@ export const StyledMenu = styled.nav`
   height: 100vh;
   width: 100vw;
   text-align: left;
-  padding: 2rem;
   position: absolute;
   top: 100px;
   left: 0;
@@ -17,9 +17,10 @@ export const StyledMenu = styled.nav`
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
 
   a {
-    font-size: 2rem;
+    ${flexUnit(5, 12, 20, "vw", "font-size")};
+    ${flexUnit(3, 12, 25, "vw", "padding")};
+    text-align: center;
     text-transform: uppercase;
-    padding: 2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
     color: black;

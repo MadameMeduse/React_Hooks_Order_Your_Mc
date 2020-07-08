@@ -2,7 +2,7 @@ import React from "react";
 import InProgress from "../components/InProgress";
 import UserPageTemplate from "../template/UserPageTemplate";
 
-const ModalView = props => {
+const LoginView = props => {
   return (
     <UserPageTemplate>
       <InProgress />
@@ -10,4 +10,4 @@ const ModalView = props => {
   );
 };
 
-export default ModalView;
+export default LoginView;

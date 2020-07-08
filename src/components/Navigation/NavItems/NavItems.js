@@ -1,29 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import ButtonIcon from "../NavIcons/ButtonIcon";
+import ButtonIcon from "../NavItems/Icons/ButtonIcon";
 import facebookIcon from "../../../icons/facebook.svg";
 import instagramIcon from "../../../icons/instagram.svg";
 import youtubeIcon from "../../../icons/youtube.svg";
 import linkedInIcon from "../../../icons/linkedin.svg";
-import LogoIcon from "../../../icons/logo.svg";
-import BurgerMenu from "../../../icons/burgerMenu.svg";
-
-const StyledBurgerMenu = styled.div`
-  width: 25%;
-  height: 25px;
-  background-image: url(${BurgerMenu});
-  background-repeat: no-repeat;
-  margin-left: 40px;
-`;
-const StyledLogo = styled.div`
-  width: 50%;
-  height: 50px;
-  background-image: url(${LogoIcon});
-  background-repeat: no-repeat;
-  display: flex;
-  background-position: 50% 50%;
-`;
+import Burger from "./Burger/Burger";
+import Menu from "./Menu/Menu";
+import Logo from "./Logo/Logo";
 
 const StyledNavIcons = styled.div`
   width: 25%;
@@ -33,11 +18,13 @@ const StyledNavIcons = styled.div`
   padding-right: 45px;
 `;
 
-const NavIcons = () => {
+export const NavItems = () => {
+  const [open, setOpen] = useState(false);
   return (
     <>
-      <StyledBurgerMenu />
-      <StyledLogo />
+      <Burger open={open} setOpen={setOpen} />
+      <Menu open={open} setOpen={setOpen} />
+      <Logo />
       <StyledNavIcons>
         <ButtonIcon
           as={Link}
@@ -64,4 +51,4 @@ const NavIcons = () => {
   );
 };
 
-export default NavIcons;
+export default NavItems;

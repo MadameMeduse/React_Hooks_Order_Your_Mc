@@ -1,24 +1,30 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "../store";
 import MainTemplate from "../template/MainTemplate";
-import ModalView from "./ModalView";
-import OrderCompleteView from "./OrderCompleteView";
-import OfferView from "./OfferView";
-import BasketView from "./BasketView";
+import LoginView from "./LoginView";
+import SubmitView from "./SubmitView";
+import MenuView from "./MenuView";
+import CartView from "./CartView";
+import AboutView from "./AboutView";
 
 class Root extends React.Component {
   render() {
     return (
-      <BrowserRouter>
-        <MainTemplate>
-          <Switch>
-            <Route exact path="/" component={ModalView} />
-            <Route path="/OrderComplete" component={OrderCompleteView} />
-            <Route path="/Offer" component={OfferView} />
-            <Route path="/Basket" component={BasketView} />
-          </Switch>
-        </MainTemplate>
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <MainTemplate>
+            <Switch>
+              <Route exact path="/" component={LoginView} />
+              <Route path="/submit" component={SubmitView} />
+              <Route path="/menu" component={MenuView} />
+              <Route path="/cart" component={CartView} />
+              <Route path="/about" component={AboutView} />
+            </Switch>
+          </MainTemplate>
+        </BrowserRouter>
+      </Provider>
     );
   }
 }

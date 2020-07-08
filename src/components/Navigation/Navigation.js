@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import NavIcons from "./NavIcons/NavIcons";
+import NavItems from "./NavItems/NavItems";
 
 const StyledNavigation = styled.nav`
   width: 100vw;
@@ -16,9 +16,11 @@ const StyledNavigation = styled.nav`
 const Navigation = () => {
   return (
     <StyledNavigation>
-      <NavIcons />
+      <NavItems />
     </StyledNavigation>
   );
 };
 
 export default Navigation;
+
+//closeBurgerMenuFn={this.closeBurgerMenu}

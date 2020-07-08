@@ -2,7 +2,7 @@ import React from "react";
 import InProgress from "../components/InProgress";
 import UserPageTemplate from "../template/UserPageTemplate";
 
-const Basket = () => {
+const CartView = () => {
   return (
     <UserPageTemplate>
       <InProgress />
@@ -10,4 +10,4 @@ const Basket = () => {
   );
 };
 
-export default Basket;
+export default CartView;

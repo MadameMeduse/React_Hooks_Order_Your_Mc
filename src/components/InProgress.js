@@ -24,9 +24,13 @@ const InProgress = () => {
     <StyledInProgress>
       <StyledHeading>App in progress, stay tuned!</StyledHeading>
       <StyledParagraph>
+        There is much more under the surface, don't forget to inspect this React
+        App.
+      </StyledParagraph>
+      {/* <StyledParagraph>
         Soon you will be able to order your favourite happyMeal by this React
         aplication.
-      </StyledParagraph>
+      </StyledParagraph> */}
     </StyledInProgress>
   );
 };

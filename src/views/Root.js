@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import store from "../store";
 import MainTemplate from "../template/MainTemplate";
 import LoginView from "./LoginView";
-import SubmitView from "./SubmitView";
+import HomeView from "./HomeView";
 import MenuView from "./MenuView";
 import CartView from "./CartView";
 import AboutView from "./AboutView";
@@ -17,7 +17,7 @@ class Root extends React.Component {
           <MainTemplate>
             <Switch>
               <Route exact path="/" component={LoginView} />
-              <Route path="/submit" component={SubmitView} />
+              <Route path="/home" component={HomeView} />
               <Route path="/menu" component={MenuView} />
               <Route path="/cart" component={CartView} />
               <Route path="/about" component={AboutView} />

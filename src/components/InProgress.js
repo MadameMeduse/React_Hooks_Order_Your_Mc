@@ -3,12 +3,12 @@ import styled from "styled-components";
 import Heading from ".//atoms/Heading/Heading";
 import Paragraph from ".//atoms/Paragraph/Paragraph";
 import Button from ".//atoms/Button/Button";
+import FlexCenter from "theme/FlexCenter";
 import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${FlexCenter()};
+
   flex-direction: column;
 `;
 

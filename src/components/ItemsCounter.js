@@ -1,25 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import FlexCenter from "theme/flexCenter";
+import Button from "./atoms/Button";
 
 const StyledWrapper = styled.div`
   background: yellow;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${FlexCenter()};
   width: 150px;
   height: 150px;
   margin: 0 auto;
-  box-shadow: ${({ theme }) => theme.shadow};
-`;
-const StyledButton = styled.button`
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  margin: 0 auto;
-  border: none;
   box-shadow: ${({ theme }) => theme.shadow};
 `;
 
@@ -28,12 +17,12 @@ export const ItemsCounter = () => {
 
   return (
     <StyledWrapper>
-      <StyledButton name="minus" onClick={() => ChangeCounter(counter - 1)}>
+      <Button name="minus" onClick={() => ChangeCounter(counter - 1)}>
         {" "}
         -
-      </StyledButton>
-      <StyledButton>{counter}</StyledButton>
-      <StyledButton onClick={() => ChangeCounter(counter + 1)}>+</StyledButton>
+      </Button>
+      <Button>{counter}</Button>
+      <Button onClick={() => ChangeCounter(counter + 1)}>+</Button>
     </StyledWrapper>
   );
 };

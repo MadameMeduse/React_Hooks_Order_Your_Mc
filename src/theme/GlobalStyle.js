@@ -21,16 +21,7 @@ body {
     padding-top: 100px;
 }
 
-@mixin FlexCenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@mixin FlexBetween {
-    display: space-between;
-    justify-content: center;
-    align-items: center;
-}
+
 
 `;
 

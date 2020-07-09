@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import flexUnit from "../../../../theme/Mixins";
+import flexUnit from "../../../../theme/FlexUnit";
 import { NavLink } from "react-router-dom";
 
 export const StyledMenu = styled.nav`
@@ -32,9 +32,7 @@ export const StyledNavLink = styled(NavLink).attrs({
   text-decoration: none;
   transition: color 0.3s linear;
 
-  &:hover {
-    color: ${({ theme }) => theme.primaryYellow};
-  }
+  &:hover,
   &.${activeClassName} {
     color: ${({ theme }) => theme.primaryYellow};
   }

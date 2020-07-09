@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
-import flexUnit from "theme/Mixins";
+import flexUnit from "theme/FlexUnit";
+import FlexCenter from "../../../theme/FlexCenter";
 
 const Button = styled.button`
   padding: 0;
@@ -13,17 +14,16 @@ const Button = styled.button`
   font-size: 16px;
   text-decoration: none;
   color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${FlexCenter()};
   text-transform: uppercase;
   cursor: pointer;
   ${flexUnit(2, 20, 50, "vw", "margin-top")};
-  transition: background 0.2s 0.1s ease;
+  transition: all 0.2s 0.1s ease;
   border: solid 3px ${({ theme }) => theme.primaryYellow};
 
   &:hover {
     background: transparent;
+    box-shadow: ${({ theme }) => theme.shadow};
   }
 
   ${({ secondary }) =>

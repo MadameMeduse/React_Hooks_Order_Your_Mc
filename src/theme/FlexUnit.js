@@ -27,18 +27,3 @@ export default function flexUnit(
       ${prop}: ${amount}${unit}
     `;
 }
-
-export function FlexCenter() {
-  return `
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      `;
-}
-export function FlexBetween() {
-  return `
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      `;
-}

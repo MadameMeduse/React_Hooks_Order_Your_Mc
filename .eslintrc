@@ -1,0 +1,11 @@
+{
+  "extends": ["airbnb", "prettier/react"],
+  "env": { "jest": true },
+  "globals": { "document": true },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "react/jsx-props-no-spreading": ["off"],
+    "indent": [2, "tab"],
+    "no-tabs": 0
+  }
+}

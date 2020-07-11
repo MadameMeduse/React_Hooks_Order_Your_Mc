@@ -21,6 +21,11 @@ body {
     padding-top: 100px;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+}
+
 
 
 `;

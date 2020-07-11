@@ -9,6 +9,7 @@ export const StyledNavigation = styled.nav`
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 10;
 `;
 
 export const StyledNavIcons = styled.div`

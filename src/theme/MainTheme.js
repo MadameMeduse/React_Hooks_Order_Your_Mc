@@ -6,7 +6,7 @@ export const theme = {
   grey300: "hsl(0, 0%, 70%)",
   black: "hsl(0, 0%, 0%)",
   light: 300,
-  bold: 600,
+  bold: 700,
   fontSize: {
     xxs: "1rem",
     xs: "1.2rem",

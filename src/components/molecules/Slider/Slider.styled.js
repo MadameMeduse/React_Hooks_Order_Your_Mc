@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import flexUnit from "../../../theme/FlexUnit";
 
 export const Item = styled.div`
   width: 100vw;
@@ -16,7 +17,10 @@ export const Item = styled.div`
 
 export const SlideTitle = styled.h2`
   margin-left: 5vw;
-  font-size: 25px;
+  ${flexUnit(2, 22, 50, "vw", "font-size")};
+  max-width: 40vw;
+  font-weight: ${({ theme }) => theme.bold};
+  font-family: "SpeedeeBold";
 `;
 
 export const SlideImage = styled.img`

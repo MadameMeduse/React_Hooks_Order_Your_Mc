@@ -4,19 +4,19 @@ import {
   Item,
   SlideTitle,
   SlideImage,
-  StyledButton,
-  ButtonWrapper
+  ButtonWrapper,
+  StyledButton
 } from "./Slider.styled";
-import hands from "assets/images/rece.png";
-import slide1 from "assets/images/Slide_1.png";
-import slide2 from "assets/images/Slide_2.png";
-import slide3 from "assets/images/Slide_3.png";
-import slide4 from "assets/images/Slide_4.png";
-import slide5 from "assets/images/Slide_5.png";
-import slide6 from "assets/images/Slide_6.png";
-import slide7 from "assets/images/Slide_7.png";
 import prevIcon from "assets/icons/left-arrow.svg";
 import nextIcon from "assets/icons/right-arrow.svg";
+import hands from "assets/images/rece.png";
+import breakfast from "assets/images/breakfast.png";
+import burgers from "assets/images/burgers.png";
+import deserts from "assets/images/deserts.png";
+import happyMeal from "assets/images/happyMeal.png";
+import lemonade from "assets/images/lemonade.png";
+import workWithUs from "assets/images/workWithUs.png";
+import zestawMocy from "assets/images/zestawMocy.png";
 
 class Slider extends React.Component {
   render() {
@@ -45,32 +45,35 @@ class Slider extends React.Component {
             <SlideImage sliderImage={hands} />
           </Item>
           <Item>
-            <SlideTitle>Wspólne powroty smakują lepiej</SlideTitle>
-            <SlideImage sliderImage={slide1} />
+            <SlideTitle>Sprawdź co się zmieniło</SlideTitle>
+            <SlideImage sliderImage={burgers} />
           </Item>
           <Item>
-            <SlideTitle>Wspólne powroty smakują lepiej</SlideTitle>
-            <SlideImage sliderImage={slide2} />
+            <SlideTitle>Lato McCafe!</SlideTitle>
+            <SlideImage sliderImage={lemonade} />
           </Item>
           <Item>
-            <SlideTitle>Wspólne powroty smakują lepiej</SlideTitle>
-            <SlideImage sliderImage={slide3} />
+            <SlideTitle>Skuś sie na desery czeko-wiśniowe!</SlideTitle>
+            <SlideImage sliderImage={deserts} />
           </Item>
           <Item>
-            <SlideTitle>Wspólne powroty smakują lepiej</SlideTitle>
-            <SlideImage sliderImage={slide4} />
+            <SlideTitle>We Bare Bears</SlideTitle>
+            <SlideImage sliderImage={happyMeal} />
           </Item>
           <Item>
-            <SlideTitle>Wspólne powroty smakują lepiej</SlideTitle>
-            <SlideImage sliderImage={slide5} />
+            <SlideTitle>McZestaw Mocy</SlideTitle>
+            <SlideImage sliderImage={zestawMocy} />
           </Item>
           <Item>
-            <SlideTitle>Wspólne powroty smakują lepiej</SlideTitle>
-            <SlideImage sliderImage={slide6} />
+            <SlideTitle>
+              McMuffin® Twarozek i Rzodkiewka. Tradycyjny smak śniadań w nowym
+              wydaniu!
+            </SlideTitle>
+            <SlideImage sliderImage={breakfast} />
           </Item>
           <Item>
-            <SlideTitle>Wspólne powroty smakują lepiej</SlideTitle>
-            <SlideImage sliderImage={slide7} />
+            <SlideTitle>Pracuj razem z nami w McDonalds</SlideTitle>
+            <SlideImage sliderImage={workWithUs} />
           </Item>
         </Carousel>
       </>

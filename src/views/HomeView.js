@@ -4,16 +4,16 @@ import UserPageTemplate from "../template/UserPageTemplate";
 import Slider from "../components/molecules/Slider/Slider";
 import Button from "../components/atoms/Button/Button";
 
-const CartView = () => {
+const HomeView = () => {
   return (
     <UserPageTemplate>
       <>
         <Slider />
-        <Button>Sprawdz</Button>
+        <Button>Sprawdź</Button>
         <InProgress />
       </>
     </UserPageTemplate>
   );
 };
 
-export default CartView;
+export default HomeView;

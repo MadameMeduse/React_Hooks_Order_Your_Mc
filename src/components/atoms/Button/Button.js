@@ -20,6 +20,7 @@ const Button = styled.button`
   ${flexUnit(2, 20, 50, "vw", "margin-top")};
   transition: all 0.2s 0.1s ease;
   border: solid 3px ${({ theme }) => theme.primaryYellow};
+  margin: 0 auto;
 
   &:hover {
     background: transparent;

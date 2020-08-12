@@ -20,7 +20,7 @@ export const SlideTitle = styled.h2`
   ${flexUnit(2, 22, 50, "vw", "font-size")};
   max-width: 40vw;
   font-weight: ${({ theme }) => theme.bold};
-  font-family: "SpeedeeBold";
+  font-family: "mainBold";
 `;
 
 export const SlideImage = styled.img`

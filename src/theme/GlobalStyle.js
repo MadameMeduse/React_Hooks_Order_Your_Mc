@@ -12,14 +12,14 @@ box-sizing: border-box;
 }
 
 @font-face {
-  font-family: 'SpeedeeBold';
+  font-family: 'mainBold';
   font-style: normal;
   font-weight: 700;
   src: local('Speedee_W_Bd.ed8982a4'), local('Speedee_W_Bd.ed8982a4'),
        url(${SpeedeeBold}) format('woff'), /* Modern Browsers */
 }
 @font-face {
-  font-family: 'SpeedeeReg';
+  font-family: 'main';
   font-style: normal;
   font-weight: 400;
   src: local('Speedee_W_Rg.91796517'), local('Speedee_W_Rg.91796517'),

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // import { Link } from "react-router-dom";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 import Logo from "../Navigation/Logo/Logo";

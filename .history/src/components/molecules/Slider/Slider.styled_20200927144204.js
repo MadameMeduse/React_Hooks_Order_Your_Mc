@@ -25,7 +25,7 @@ export const SlideTitle = styled.h2`
 
 export const SlideImage = styled.img`
   width: 100vw;
-  height: 30vh;
+  height: auto;
   background-image: url(${({ sliderImage }) => sliderImage});
   background-repeat: no-repeat;
   background-position: 50% 50%;

@@ -10,7 +10,6 @@ import Menu from "components/molecules/Navigation/Menu/Menu";
 import Logo from "components/molecules/Navigation/Logo/Logo";
 import { StyledNavigation, StyledNavIcons } from "./Navigation.styled";
 import NavigationImage from "assets/images/logoMcD.svg";
-
 const Navigation = () => {
   const [open, setOpen] = useState(false);
   return (

@@ -19,13 +19,14 @@ export const SlideTitle = styled.h2`
   margin-left: 5vw;
   ${flexUnit(2, 22, 50, "vw", "font-size")};
   ${flexUnit(40, 320, 1400, "vw", "width")};
+  max-width: 90vw;
   font-weight: ${({ theme }) => theme.bold};
   font-family: "mainBold";
 `;
 
 export const SlideImage = styled.img`
   width: 100vw;
-  height: 30vh;
+  height: 500px;
   background-image: url(${({ sliderImage }) => sliderImage});
   background-repeat: no-repeat;
   background-position: 50% 50%;

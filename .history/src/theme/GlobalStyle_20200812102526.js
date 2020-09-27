@@ -28,7 +28,7 @@ box-sizing: border-box;
 
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; 
 }
 
 body {
@@ -36,8 +36,6 @@ body {
     font-family: 'Montserrat';
     list-style: none;
     padding-top: 100px;
-    margin: 0;
-    padding: 0;
 }
 
 button {

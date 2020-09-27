@@ -13,7 +13,7 @@ export default function flexUnit(
       @media (max-${dimension}: ${minBreakpoint}px) {
         ${prop}: ${min}px;
       }
-
+  
       ${
         max
           ? `
@@ -23,7 +23,7 @@ export default function flexUnit(
       `
           : ""
       }
-
+  
       ${prop}: ${amount}${unit}
     `;
 }

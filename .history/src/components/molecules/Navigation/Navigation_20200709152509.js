@@ -9,7 +9,6 @@ import Burger from "components/molecules/Navigation/Burger/Burger";
 import Menu from "components/molecules/Navigation/Menu/Menu";
 import Logo from "components/molecules/Navigation/Logo/Logo";
 import { StyledNavigation, StyledNavIcons } from "./Navigation.styled";
-import NavigationImage from "assets/images/logoMcD.svg";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
@@ -17,7 +16,7 @@ const Navigation = () => {
     <StyledNavigation>
       <Burger open={open} setOpen={setOpen} />
       <Menu open={open} setOpen={setOpen} />
-      <Logo image={NavigationImage} />
+      <Logo />
       <StyledNavIcons>
         <NavIcon
           as={Link}

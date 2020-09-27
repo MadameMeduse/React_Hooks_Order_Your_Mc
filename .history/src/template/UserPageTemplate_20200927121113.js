@@ -7,7 +7,7 @@ const UserPageTemplate = ({ children }) => (
   <>
     <Navigation />
     {children}
-    <Footer />
+    \<Footer />
   </>
 );
 

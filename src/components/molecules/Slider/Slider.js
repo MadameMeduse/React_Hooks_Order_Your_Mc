@@ -21,7 +21,7 @@ import zestawMocy from "assets/images/zestawMocy.png";
 class Slider extends React.Component {
   render() {
     return (
-      <>
+      <React.Fragment>
         <ButtonWrapper>
           <StyledButton
             icon={prevIcon}
@@ -76,7 +76,7 @@ class Slider extends React.Component {
             <SlideImage sliderImage={workWithUs} />
           </Item>
         </Carousel>
-      </>
+      </React.Fragment>
     );
   }
 }
